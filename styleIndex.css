@@ -1,0 +1,74 @@
+/* Resentando o css da página */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+}
+
+/* Estilizando o conteúdo principal da página */
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Definindo a altura mínima da página (além de fixar o conteúdo no meio) */ 
+    background-color: #801A86;
+}
+
+/* Estilizando a página para telas menores */
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* Estilizando o card das informações do clima da cidade */
+
+.cidade {   
+    background-color: #FFD447;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+}
+
+.cidade h1 {
+    margin-bottom: 30px;
+}
+
+.cidade label {
+    font-size: 16px;
+}
+
+.cidade input[type="text"] {
+    width: 100%;
+    height: 30px;
+    font-size: 16px;
+    padding-left: 5px;
+    border: none;
+    border-radius: 15px;
+    margin-top: 3px;
+    margin-bottom: 20px;
+}
+
+.botao {
+    text-align: center;
+}
+
+.cidade button {
+    cursor: pointer;
+    height: 30px;
+    width: 70px;
+    background-color: #F55363;
+    border: none;
+    border-radius: 15px;
+}
+
+.clima h3 {
+    margin-top: 20px;
+}
+
+.clima p {
+    margin-top: 10px;
+}

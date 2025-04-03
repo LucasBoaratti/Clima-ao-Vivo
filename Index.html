@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Clima ao vivo</title>
+        <link rel="stylesheet" href="./styleIndex.css">
+        <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/1779/1779940.png" type="image/x-icon">
+        <script src="./Clima_ao_Vivo.js"></script>
+    </head>
+    <body>
+        <!-- Criando a tag main com a classe container para fixar a largura em 1440px em telas menores -->
+        <main>
+            <div class="container">
+                <!-- Criando a div de cidade para o usuário colocar o nome da cidade -->
+                <div class="cidade">
+                    <h1>Veja o clima de sua cidade agora!</h1>
+                    <label for="cidade">Cidade</label>
+                    <input type="text" name="cidade" id="cidade" placeholder="Digite sua cidade">
+                    <!-- Criando uma div para centralizar o botão -->
+                     <div class="botao">
+                        <button type="button" onclick="clima()">Verificar</button>
+                     </div>             
+                    <div class="clima">
+                        <h3 id="nomeCidade"></h3>
+                        <p id="temperatura"></p>
+                        <p id="descricao"></p>
+                    </div>
+                </div>
+                <!-- Criando uma div para mostrar as informações do clima -->
+            </div>      
+        </main>
+    </body>
+</html>
